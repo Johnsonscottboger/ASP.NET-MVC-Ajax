@@ -1,0 +1,12 @@
+﻿@using Ajax使用.Models
+@model IEnumerable<Ajax使用.Models.Person>
+
+
+@foreach(var item in Model)
+{
+    <tr>
+        <td>@item.FirstName</td>
+        <td>@item.LastName</td>
+        <td>@item.Role</td>
+    </tr>
+}
